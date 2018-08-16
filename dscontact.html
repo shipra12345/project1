@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darshan Fabrics-contact </title>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="fabricstwo.css">
+</head>
+
+<body>
+<div class="wallpaper">
+<header class="header">
+
+<div class="container">
+<div class="row">
+<div class="d-none d-lg-block col-lg-3">
+<img src="df-logo.png" class="ig d-none d-md-block" width="80" class="logo">
+</div>
+<div class="col-12 col-lg-9">
+<nav class="navbar navbar-expand-lg  navbar-light">
+ <a class="navbar-brand d-block d-lg-none" href="#"><img src="df-logo.png" class="ig" width="80" class="logo"></a>
+  <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav  my-2 my-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link" id="shade" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><b>HOME</b> </a><span class="sr-only">(current)</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="shop.html"><i class="fa fa-product-hunt" aria-hidden="true"></i><b>PRODUCTS</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="rawmaterial.html"><i class="fa fa-file-image-o" aria-hidden="true"></i><b>RAWMATERIALS</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html"><i class="fa fa-info-circle" aria-hidden="true"></i><b>ABOUTUS</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dscontact.html"><i class="fa fa-phone" aria-hidden="true"></i><b>CONTACTUS</b></a>
+      </li>
+      </ul>
+          </div>
+        </nav>
+      </div>
+      
+    </div>
+    
+  </div>
+</header>
+
+<div class="banner_content text-center pb-5 pt-4">
+<i class="fa fa-phone"  aria-hidden="true"></i>
+<div class="mid"><b>CONTACT US</b></div>
+</div>
+
+
+</div><br><br><br>
+
+<div class="container bg-light pt-4  mb-5 border">
+<h1 class="h text-center mb-5"><span class="sn">Contact us</span></h1>
+<div class="row">
+<div class="col-12 col-md-5"><div class="color">
+<form action="" class="p-5 my_form">
+<div class="form-group">
+<label><b>First Name</b></label>
+<input type="text" name="firstname" placeholder="First Name" class="form-control">
+</div>
+<div class="form-group">
+<label><b>Last Name</b></label>
+<input type="text" name="lastname" placeholder="Last Name" class="form-control">
+</div>
+<div class="form-group">
+<label><b>subject</b></label>
+<input type="text" name="subject" placeholder="Subject" class="form-control">
+</div>
+<div class="form-group">
+<label><b>Message</b></label>
+<input type="text" name="message" placeholder="eg. Your email id & Message" class="form-control">
+</div>
+
+<div class="form-group">
+	<button class="btn btn-danger submit_form" type="submit">Submit</button>
+</div>
+
+
+</form>
+</div></div>
+
+
+
+<div class="col-12 col-md-5 offset-md-1 border-left pl-5">
+<h3>Our Address</h3>
+<address>Shop no-8 RPS DDA <br>Market Khanpur,Delhi<br>110062</address>
+
+ <a href="tel:011-29955028"><i class="fa fa-phone" aria-hidden="true"> 011-29955028</a></i><br>
+ <a href="tel:011-29955028"><i class="fa fa-mobile" aria-hidden="true"> 9810442615</a></i><br>
+<a href="mailto:shivam.bakshi9998@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"> shivam.bakshi9998@gmail.com</i></a></div>
+
+</div>
+</div>
+
+<footer class="footer">
+   <div class="center"> copyright -2018<br>All rights reserved</div>
+    
+    </footer>
+
+
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+	
+	$('.submit_form').click(function(e) {
+        	
+			var fname = $('[name="firstname"]').val();
+			var lname = $('[name="lastname"]').val();
+			var subject = $('[name="subject"]').val();
+			var msg = $('[name="message"]').val(); 
+			
+			if(msg != "" && fname != "" && subject != "" && lname !="" ){
+				alert('Thanks for contact, Your form has been Submitted Successfully');
+				$('[name="firstname"],[name="lastname"],[name="subject"],[name="message"]').val('');	
+			}
+			else
+			{
+			
+				alert('All fields are required');		
+			}
+			e.preventDefault();
+    });
+	
+	
+	
+			sticky_navigation_offset_top = $('.header').height(); 
+			     sticky_navigation = function() {  
+				 scroll_top = $(window).scrollTop(); 
+				 if (scroll_top > sticky_navigation_offset_top) { 
+				 $('.header').addClass('scroll_header');
+				 } else { 
+				  $('.header').removeClass('scroll_header');					  
+				  }    }
+				  
+				   sticky_navigation();
+				      
+				    $(window).scroll(function() {      
+					  sticky_navigation();  
+			});
+</script>
+
+</body>
+</html>

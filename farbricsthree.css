@@ -1,0 +1,36 @@
+.wallpaper{
+   background-image: url(wall.jpg);
+   background-size:cover;
+    }
+	 
+	.nav-link{
+	
+	margin:18px;
+}
+.mid{
+	
+text-align:center;
+font-style:italic;
+font-size:94px;
+color:#F15B2A;	
+font-family:tahoma;
+}
+.nav-item{
+color:#000000;	
+}
+.nav-item i{
+display:none;	
+}
+.nav-link:hover{
+
+	
+	color:#F15B2A;
+}
+#shade{
+color:#F15B2A;
+}.ig{
+margin-top:20px;	
+}
+.h{
+color:#000000;
+text-align:center;	
